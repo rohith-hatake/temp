@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script src="https://kit.fontawesome.com/109900eb3c.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+ 
+            <nav>
+                <img src="" class="logo"  >
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">MY PROJECTS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>               </ul>          
+            </nav>
+                   <div class="container">
+            <div class="header-text">
+                <h1><br>Hi,I'm <span> Miruthula</span></h1><br>
+                <p>A passionate DEVELOPER crafting <br>ideas into reality.</p>
+                <p><br>Welcome to my creative space, where innovationmeets<br> precision.With a strong eye for detail and a drive to<br>  solve real-world problems, I bring ideas to life through <br>thoughtful design, clean code, or compelling depending <br>on your field.</p>
+                
+            </div>
+        </div>
+
+    </div>
+<div id="about">
+    <div id="container">
+        <div id="row">
+            <div class="about-col-1">
+               <img src="C:\\Users\\Gopi\\OneDrive\\Desktop\\portfolio\\back3.jp        eg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me<br></h1>
+                <p><br>Enthusiastic and highly motivated Electronics and Communications Engineering graduate
+with a strong foundation in Java and SQL. Eager to apply my technical skills and problem-
+solving abilities to contribute to innovative projects and real-world solutions in a dynamic 
+and challenging environment. Seeking an entry-level position where I can leverage my 
+academic knowledge, project experience, and passion for technology to grow as a 
+professional and add value to the organization.</p>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links " onclick="opentab('education')">Education</p>
+    <p class="tab-links " onclick="opentab('certification')">Certification Course</p>
+</div>
+<div class="tab-contents" id="skills">
+    <ul>
+        <li><span>Java</span><br>OOPS<br> web interface</li>
+        <li><span>SQL</span><br>Database Managements</li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2019-2021</span><br>NARAYANAE-TECHNO SCHOOL</li>
+        <li><span>2021-2025</span><br>B.E. ELECTRONICS AND COMMUNICATION<br>PANIMALAR ENGINEERING COLLEGE</li>
+    </ul>
+</div>
+<div class="tab-contents" id="certification">
+    <ul>
+        <li>1.NPTEL Online Certification-Machine Learning</li>
+        <li>2.TCS ION Certification-Applied COuld Computing</li>
+        <li>3.Front End Development-HTML</li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">MY PROJECTS</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>EMPLOYEE MANAGEMENTS SYSTEM</h2><br>
+                     <p>Developed a command-line application to manage employee
+records, departments, leave requests, and attendance. The system 
+features functionalities for adding, updating, deleting, and listing 
+employees and departments, alongside modules for tracking leave 
+and attendance records. By utilizing object-oriented principles, I 
+ensured the code was modular, maintainable, and enhanced 
+readability and reusability.<br><br>
+<h3>Technologies Used:</h3> <br>Java, Collections, Object-Oriented Programming</p>
+<br>
+
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>SMART PILL DISPENSER</h2><br>
+                      <P>Led the development of an innovative Smart Pill Dispenser project, 
+utilizing ESP32, photoelectric sensors, and Blynk app integration for 
+real time monitoring. Demonstrated proficiency in IoT and
+healthcare technology, showcasing the ability to innovate and solve 
+real-world challenges. Ready to contribute expertise to drive 
+healthcare innovation in a dynamic organization.<br><br>
+<h3>Technologies Used:</h3><br>ESP32,6 Photoelectric Sensors, Blynk IOT</P>
+<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY RESUME</h1>
+        <img src="C:\\Users\\Gopi\\OneDrive\\Desktop\\portfolio\\resume.jpeg"  alt="My Resume Photo" class="resume-img">
+        <br><br> 
+        <a href="C:\\Users\\Gopi\\Downloads\\Blue and White Professional College Student CV Resume (5) (2) (1).pdf" download class="download-btn">Download Resume</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <p><i class="fa-solid fa-paper-plane"></i>miruthulamathi3@gmail.com</p><br>
+                <p><i class="fa-solid fa-phone"></i>9677075333</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+
+                <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="E-Mail" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <p>Copyright <i class="fa-regular fa-copyright">  </i> Miruthula</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    for (var j = 0; j < tabcontents.length; j++) {
+        tabcontents[j].classList.remove("active-tab");
+        tabcontents[j].style.display = "none";
+    }
+    document.getElementById(tabname).classList.add("active-tab");
+    document.getElementById(tabname).style.display = "block";
+    event.currentTarget.classList.add("active-link");
+}
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbydDkK73byQUIXweolTyJpuYuvb5rIl9FAwbbRQVyzxsaiivAUXLixO-2DjoHkSnxDq/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML ="Message sent Succesfully"
+        setTimeout(function() {
+            msg.innerHTML=" "
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+ </body>
+
+</html>
